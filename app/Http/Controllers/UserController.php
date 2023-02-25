@@ -62,7 +62,7 @@ class UserController extends Controller
     }
     public function dashboard(){
             $user = Auth::user();
-            return view("project.dashboard",[
+            return view("project.home",[
             "user" => $user,
         ]);
     }
